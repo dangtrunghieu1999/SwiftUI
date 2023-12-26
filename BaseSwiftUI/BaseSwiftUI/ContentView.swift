@@ -9,52 +9,37 @@ import SwiftUI
 import WebKit
 
 struct ContentView: View {
+    @State private var sliderValue: CGFloat = 50
+    private var minSliderValue: CGFloat = 10
+    private var maxSliderValue: CGFloat = 100
+    
     var body: some View {
         VStack {
-            HeaderView()
-            HStack {
-                CardView(
-                    iconName: "character.book.closed.fill",
-                    title: "Books",
-                    description: "read, dream, belive, live")
-                
-                CardView(
-                    iconName: "music.quarternote.3",
-                    title: "Music",
-                    description: "listen, sing, dance"
-                )
-            }
-            
-            ZStack {
-                CardView(
-                    iconName: "laptopcomputer.and.iphone",
-                    title: "Programing",
-                    description: "imagine, create, share, enjoy"
-                )
-                
-                BadgeView(title: "SwiftUI",
-                          padding: 5,
-                          radius: 10,
-                          rotation: -35,
-                          xOffset: -125,
-                          yOffset: -70)
-                
-                BadgeView(title: "Layout using Stacks",
-                          padding: 10,
-                          radius: 20,
-                          rotation: 0,
-                          xOffset: 0,
-                          yOffset: 110)
-            }
-            
-            Spacer()
+            Text("Slider value: \(Int(sliderValue))")
+            MySlider(value: $sliderValue, minValue: minSliderValue, maxValue: maxSliderValue)
         }
-        .padding()
     }
 }
 
 struct ContentView_Perviews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+struct MySlider: View {
+    @Binding var value: CGFloat
+    var minValue: CGFloat
+    var maxValue: CGFloat
+    
+    var body: some View {
+        HStack {
+            Text("\(Int(minValue))")
+                .foregroundStyle(.blue)
+            Slider(value: $value, in: minValue...maxValue, step: 1)
+            Text("\(Int(maxValue))")
+                .foregroundColor(.blue)
+        }
     }
 }
