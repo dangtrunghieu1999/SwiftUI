@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A13DCCC2C1B00E600F7B823 /* NotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A13DCCB2C1B00E600F7B823 /* NotificationDetailView.swift */; };
 		2A5CCF222C1995E5002820DB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CCF212C1995E5002820DB /* MessageCell.swift */; };
 		2A5CCF242C199717002820DB /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CCF232C199717002820DB /* NotificationsListView.swift */; };
 		2A830B492B4D04C200097F6B /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A830B482B4D04C200097F6B /* UserStatView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A13DCCB2C1B00E600F7B823 /* NotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDetailView.swift; sourceTree = "<group>"; };
 		2A5CCF212C1995E5002820DB /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2A5CCF232C199717002820DB /* NotificationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsListView.swift; sourceTree = "<group>"; };
 		2A830B482B4D04C200097F6B /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				2A83967B2B35364C009D78B2 /* Preview Content */,
 				2A5CCF212C1995E5002820DB /* MessageCell.swift */,
 				2A5CCF232C199717002820DB /* NotificationsListView.swift */,
+				2A13DCCB2C1B00E600F7B823 /* NotificationDetailView.swift */,
 			);
 			path = BaseSwiftUI;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				2AF9F32A2B4661CB00B71F5F /* PizzaView.swift in Sources */,
 				2A8396742B35364A009D78B2 /* BaseSwiftUIApp.swift in Sources */,
 				2AD874E52B3EDDE500B04C21 /* UsingState.swift in Sources */,
+				2A13DCCC2C1B00E600F7B823 /* NotificationDetailView.swift in Sources */,
 				2AD874E32B3EDDC100B04C21 /* ContentView.swift in Sources */,
 				2AF9F3282B4660E400B71F5F /* PizzaSizePicker.swift in Sources */,
 				2A5CCF222C1995E5002820DB /* MessageCell.swift in Sources */,
